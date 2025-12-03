@@ -1,0 +1,312 @@
+/* === RESET GENERAL === */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color:#f2f3f5;
+    color: #333;   
+    line-height:1.7;
+}
+
+/* CONTENEDOR GENERAL */
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+/* ===========================
+   NAVEGACIÓN
+=========================== */
+.navbar {
+    background-color: #070a14;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:border-box;
+}
+
+
+.logo {
+    color: #f3b51a;
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #f3b51a;
+}
+
+/* ===========================
+   HERO / BANNER
+=========================== */
+.hero {
+    background-image: url("/img/hero-bg.png"); 
+    background-size: cover;
+    background-position: center;
+    color: #f3b51a;;
+    text-align: center;
+    padding: 12rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* ===========================
+   GRID DE CRÉDITOS
+=========================== */
+.credits-section {
+    padding: 1rem 0;
+}
+.credits-section h3 {
+    font-size: 3rem;
+    color: #fcb912;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.credits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: stretch;
+}
+
+/* TARJETAS */
+.credit-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border: 1px solid rgba(255,255,255,0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.credit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(3, 3, 3, 0.15);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.card-header h4 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.icon {
+    font-size: 3rem;
+    color: #f3c245;
+}
+
+/* DETALLES */
+.details {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.label {
+    font-size: 0.95rem;
+    color: #475569;
+}
+.value {
+    font-weight: 600;
+    color: #d97706;
+}
+
+.highlight {
+    color: #b45309;
+    font-size: 1.1rem;
+}
+
+/* BOTÓN */
+.btn-primary {
+    background: linear-gradient(135deg, #f3c245, #efb01c);
+    color: white;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 650;
+    font-size: 0.85rem;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.btn-primary:hover {
+    background: #0f172a;
+    transform: translateY(-2px);
+}
+
+
+/* ===========================
+   MENÚ RESPONSIVE
+=========================== */
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #f3b51a;
+    cursor: pointer;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #f3b51a;
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        background-color: #070a14;
+        margin-top: 1rem;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+        padding: 0;
+    }
+
+     .menu li {
+    padding: 0.8rem 0;
+    }
+    .menu.active {
+        max-height: 500px;
+        padding: 1rem 0;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+.footer {
+    background-color: #070a14;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: #f3b51a;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* === FORMULARIO CON IMAGEN LATERAL === */
+.form-layout {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.form-image {
+  background-image: url("/img/form-bg.png"); 
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  height: 100%;
+  min-height: 500px;
+}
+.filters {
+  display: flex;
+  justify-content: center;   /* 👉 CENTRA horizontalmente */
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;           /* 👉 Permite que bajen en móviles */
+  width: 100%;
+  max-width: 900px;          /* 👉 Para que no se estire demasiado */
+}
+
+.filters input,
+.filters select {
+  padding: .7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  min-width: 200px;          /* 👉 Igual tamaño visual */
+  background: white;
+}
