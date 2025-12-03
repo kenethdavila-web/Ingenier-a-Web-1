@@ -12,7 +12,7 @@ Aplicación de ejemplo para consultar, simular y solicitar créditos.
 
 ## Instalación
 1. npm install
-2. npm run dev para iniciarla()
+2. npm run dev para iniciarla
 
 ## Instrucciones de la app
 
@@ -24,7 +24,7 @@ Aplicación de ejemplo para consultar, simular y solicitar créditos.
 - package.json
 
 ## Commits
-Ejemplo de commits: "Configuración inicial", "Componente CreditCard creado", ...
+Ejemplo de commits: git commit -m "Configuración inicial", git commit -m "Componente CreditCard creado", ...
 
 ![Página principal](public/img/Home.png)
 
