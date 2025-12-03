@@ -1,4 +1,4 @@
-# CreditSmart - React + Vite
+# S30 - EA2: Desarrollo de Aplicación Web Dinámica con React - CreditSmart - React + Vite
 
 *Autores:* Keneth Anderson Dávila Cuesta e Isai Manuel Narvaez Redondo
 
