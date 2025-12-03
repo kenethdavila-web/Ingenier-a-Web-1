@@ -26,7 +26,7 @@ Aplicación de ejemplo para consultar, simular y solicitar créditos.
 ## Commits
 Ejemplo de commits: "Configuración inicial", "Componente CreditCard creado", ...
 
-![Página principal](public/imgHome.png/)
+![Página principal](public/img/Home.png)
 
 ![Simulador](public/img/simulador.png)
 
