@@ -6,3 +6,4 @@ export function monthlyPayment(P, r, n){
   const denominator = 1 - Math.pow(1 + monthly, -n)
   return numerator / denominator
 }
+
