@@ -3,7 +3,7 @@
 *Autores:* Keneth Anderson Dávila Cuesta e Isai Manuel Narvaez Redondo
 
 ## Descripción
-Aplicación de ejemplo para consultar, simular y solicitar créditos, la  cua ya guarda las solicitudes enviadas en la nube, así cm la infomación de las cards.
+Aplicación de ejemplo para consultar, simular y solicitar créditos, la  cual ya guarda las solicitudes enviadas en la nube, así cm la información de las cards.
 
 ## Tecnologías
 - React
