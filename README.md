@@ -3,7 +3,7 @@
 *Autores:* Keneth Anderson Dávila Cuesta e Isai Manuel Narvaez Redondo
 
 ## Descripción
-Aplicación de ejemplo para consultar, simular y solicitar créditos.
+Aplicación de ejemplo para consultar, simular y solicitar créditos, la  cua ya guarda las solicitudes enviadas en la nube, así cm la infomación de las cards.
 
 ## Tecnologías
 - React
@@ -26,6 +26,13 @@ Aplicación de ejemplo para consultar, simular y solicitar créditos.
 ## Commits
 Ejemplo de commits: git commit -m "Configuración inicial", git commit -m "Componente CreditCard creado", ...
 
+## Configuración Firebase
+1. Crear proyecto en Firebase
+2. Registrar app web y copiar config al `.env`
+3. Habilitar Firestore y crear colección `credits` con documentos (name, rateMonthly, min, max, termMax, description, icon)
+4. Crear colección de solicitudes enviadas (requests) qué almacenes todas las solicitudes enviadas desde la app.
+5. La app lee `credits` en tiempo real y guarda solicitudes en la colección `requests`.
+
 ![Página principal](public/img/Home.png)
 
 ![Simulador](public/img/simulador.png)
@@ -33,3 +40,7 @@ Ejemplo de commits: git commit -m "Configuración inicial", git commit -m "Compo
 ![Formulario de solicitud](public/img/solicitar.png)
 
 ![Responsive](public/img/adaptable.png)
+
+![Responsive](public/img/solicitudes.png)
+
+![Responsive](public/img/coleccionesFirebase.png)
