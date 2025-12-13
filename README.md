@@ -1,4 +1,4 @@
-# S30 - EA2: Desarrollo de Aplicación Web Dinámica con React - CreditSmart - React + Vite
+# S30 - S40 - EA3: Integración con Backend Firebase - CreditSmart- React + Vite
 
 *Autores:* Keneth Anderson Dávila Cuesta e Isai Manuel Narvaez Redondo
 
