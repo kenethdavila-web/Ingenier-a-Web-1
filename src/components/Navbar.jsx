@@ -25,6 +25,7 @@ function Navbar() {
           <li><Link to="/">Inicio</Link></li>
           <li><Link to="/simulador">Buscar</Link></li>
           <li><Link to="/solicitar">Solicitar crédito</Link></li>
+          <li><Link to="/solicitudes">Solicitudes</Link></li>
         </ul>
 
       </div>

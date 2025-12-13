@@ -1,9 +1,9 @@
-import useCredits from '../hooks/useCredits'
+import useCreditsFirebase from "../hooks/useCreditsFirebase";
 import CreditCard from './CreditCard'
 import { useNavigate } from 'react-router-dom'
 
 export default function CreditsGrid({ showFilters = true, limit = null }) {
-  const { credits, query, setQuery, minRange, setMinRange, maxRange, setMaxRange, sortBy, setSortBy } = useCredits()
+  const { credits, query, setQuery, minRange, setMinRange, maxRange, setMaxRange, sortBy, setSortBy } = useCreditsFirebase();
   const nav = useNavigate()
 
   const handleRequest = (credit) => {

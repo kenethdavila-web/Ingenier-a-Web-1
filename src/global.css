@@ -70,7 +70,7 @@ body {
     background-image: url("/img/hero-bg.png"); 
     background-size: cover;
     background-position: center;
-    color: #f3b51a;;
+    color: #f3f3f2;;
     text-align: center;
     padding: 12rem 0;
 }
@@ -309,4 +309,180 @@ body {
   outline: none;
   min-width: 200px;          /* 👉 Igual tamaño visual */
   background: white;
+}
+.info {
+  background: #0ea5e9;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.success {
+  background: #16a34a;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1.5rem;
+}
+
+.request-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-left: 6px solid #f3b51a;
+}
+
+.request-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0a0d1c;
+}
+
+.details-box {
+  margin-top: 1rem;
+}
+
+details summary {
+  cursor: pointer;
+  color: #f3b51a;
+  font-weight: bold;
+}
+/* ===========================================
+   PAGE: LISTA DE SOLICITUDES
+   =========================================== */
+
+.requests-page h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #f3b51a;
+}
+
+/* 🔎 Input de búsqueda */
+.filter-input {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+    display: block;
+
+    padding: 0.85rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+
+    outline: none;
+    transition: border 0.3s ease;
+    font-size: 1rem;
+}
+
+.filter-input:focus {
+    border-color: #f3b51a;
+}
+
+/* GRID donde se muestran las cards */
+.requests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* CARD estilo igual al de créditos */
+.request-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 1.8rem;
+
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(155, 155, 255, 0.35);
+
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.request-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 13px 25px rgba(0,0,0,0.15);
+}
+
+/* TITULO DE LA CARD */
+.request-card h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+/* Texto dentro de la card */
+.request-card p {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.request-card strong {
+    color: #d97706;
+}
+
+/* DETAILS (bloque desplegable de ver más) */
+.details-box {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+}
+
+.details-box summary {
+    padding: 0.6rem;
+    cursor: pointer;
+    background: #0a0d1c;
+    color: #f3b51a;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background .3s ease;
+}
+
+.details-box summary:hover {
+    background: #f3b51a;
+    color: #070a14;
+}
+
+.details-box p {
+    padding: 0.4rem 0 0.4rem 0.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: #f3b51a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  color: white;
 }
