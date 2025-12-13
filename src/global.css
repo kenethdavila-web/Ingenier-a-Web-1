@@ -486,3 +486,26 @@ details summary {
 .socials a:hover {
   color: white;
 }
+.details-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.details-box summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.details-box .buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-danger {
+  background: #0a0a0a;
+  color: white;
+}
